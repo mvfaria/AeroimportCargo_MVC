@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt">
+	<head>
+	    <title>Aeroimport Cargo Freight System, INC.</title>
+	    
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	    <meta http-equiv="content-language" content="pt-br" />
+	    <meta name="description" content="" />
+	    <meta name="keywords" content="" />
+	    <meta name="robots" content="index,follow" />
+	    
+        <link rel="shortcut icon" href=""/>
+	    <link href="../../Content/css/comum.css" rel="stylesheet" type="text/css" media="screen" />
+
+        <asp:ContentPlaceHolder ID="CSSContent" runat="server" />
+
+		<!--[if gt IE 8]>
+			<link href="css/ie9.css" rel="stylesheet" type="text/css" media="screen" />
+		<![endif]-->
+	</head>
+    <body>
+		<div id="Header">
+            <div class="grid_978">
+	            <h1 class="header-logo rpl fl">
+                    <a href='<%= Url.Action("Index", "Home") %>'  title="Aeroimport Cargo Freight System, INC.">
+                        <span>Aeroimport Cargo Freight System, INC.</span>
+                    </a>
+	            </h1>
+                <!--
+	            <div class="box fr fix">
+		            <div class="linguas fix">
+			            <ul class="fix">
+				            <li class="pt rpl fl"><a href="#" title="pt"><span>pt</span></a></li>
+				            <li class="en rpl fl"><a href="#" title="en"><span>en</span></a></li>
+				            <li class="esp rpl fl"><a href="#" title="esp"><span>esp</span></a></li>
+			            </ul>
+		            </div>
+		            <div class="redes-sociais">
+			            <ul class="fix">
+				            <li class="twitter rpl fl"><a href="#" title="siga nosso twitter @nomedotwitter"><span>siga nosso twitter @nomedotwitter</span></a></li>
+				            <li class="facebook rpl fl"><a href="#" title="siga nosso perfil no facebook"><span>siga nosso perfil no facebook</span></a></li>
+				            <li class="feed rpl fl"><a href="#" title="acompanhe nossos feeds"><span>acompanhe nossos feeds</span></a></li>
+			            </ul>				
+		            </div>
+	            </div>
+                -->
+            </div>
+        </div><!-- #header -->
+		<div id="Menu" class="fix">
+            <div class="grid_978">
+	            <ul>
+		            <li class="fl">
+                        <%= Html.ActionLink("Empresa", "Index", "Empresa", null, new { title = "Empresa" })%>
+                    </li>
+		            <li class="fl">
+                        <%= Html.ActionLink("Portfólio", "Index", "Portfolio", null, new { title = "Portfólio" })%>
+                    </li>
+		            <li class="fl">
+                        <%= Html.ActionLink("Soluções", "Index", "Solucoes", null, new { title = "Soluções" })%>
+                    </li>
+		            <li class="fl">
+                        <!--<a href="cotacao.html" title="Cotação Online">Cotação Online</a>-->
+                        <a href="construcao.html" title="Cotação Online">Cotação Online</a>
+		            </li>
+		            <li class="fl">
+                        <!--<a href="aerotracking.html" title="AeroTracking System">AeroTracking System</a>-->
+                        <a href="construcao.html" title="AeroTracking System">AeroTracking System</a>
+		            </li>
+		            <li class="fl">
+                        <!--<a href="infos.html" title="Informações Úteis">Informações Úteis</a>-->
+                        <a href="construcao.html" title="Informações Úteis">Informações Úteis</a>
+		            </li>
+	            </ul>
+            </div>
+        </div><!-- #Menu -->
+		<div id="Conteudo" class="fix">
+			<div class="grid_978">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+			</div>
+		</div><!-- #Conteudo -->
+		<div id="Footer" class="fix">
+            <div class="grid_978">
+	            <div class="content fix">
+		            <div class="BoxLocalizacao fl">
+			            <h5>Localização</h5>
+			            <p>
+                            8113 NW 68th St.<br />
+			                Miami, FL 33166
+			            </p>
+						
+			            <p>
+                            Phone: 1 786 206-0702<br />
+			                E-mail: <a href="mailto:aeroimport@aeroimportcargo.com" title="">aeroimport@aeroimportcargo.com</a>
+			            </p>
+		            </div>
+
+                    <% Html.RenderPartial("ContatoUserControl"); %>
+		            
+		            <%--<h5 class="rpl fr"><a href="#" title="Clique para acessar o Aerowebtrack"><span>Clique para acessar o Aerowebtrack</span></a></h5>--%>
+                    
+	            </div>
+	            <h6>Copyright © 2011. Aero Import. Todos os direitos reservados.</h6>
+            </div>
+        </div><!-- #Footer -->
+        
+        <script type="text/javascript" src="../../Scripts/jquery.js"></script>
+        <script type="text/javascript" src="../../Scripts/comum.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#btnEnviar').click(function(e) {
+                    $('#FormContato').submit();
+                    //e.preventDefault();
+                });
+
+//                $("#FormContato").submit(function (e) {
+//                    return validate();
+//                });
+            });
+            
+        </script>
+        <asp:ContentPlaceHolder ID="ScriptContent" runat="server" />
+	</body>
+</html>

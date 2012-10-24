@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B91D6CB2-922D-413D-B324-8C5498B1AB60}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AeroimportCargo_MVC</RootNamespace>
+    <AssemblyName>AeroimportCargo_MVC</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContatoController.cs" />
+    <Compile Include="Controllers\EmpresaController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PortfolioController.cs" />
+    <Compile Include="Controllers\SolucoesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ContatoModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\clientes.css" />
+    <Content Include="Content\css\comum.css" />
+    <Content Include="Content\css\cotacao-online.css" />
+    <Content Include="Content\css\empresa.css" />
+    <Content Include="Content\css\home.css" />
+    <Content Include="Content\css\ie7.css" />
+    <Content Include="Content\css\ie9.css" />
+    <Content Include="Content\css\infos.css" />
+    <Content Include="Content\css\login.css" />
+    <Content Include="Content\css\portifolio.css" />
+    <Content Include="Content\css\rockwell-webfont.svg" />
+    <Content Include="Content\css\solucoes.css" />
+    <Content Include="Content\img\alterar-cancelar-ico.png" />
+    <Content Include="Content\img\bandeiras.png" />
+    <Content Include="Content\img\banner-img01.png" />
+    <Content Include="Content\img\banner-img02.png" />
+    <Content Include="Content\img\banner-img03.png" />
+    <Content Include="Content\img\banner-paginacao.png" />
+    <Content Include="Content\img\bg-clock.png" />
+    <Content Include="Content\img\bg-limpar.png" />
+    <Content Include="Content\img\bt-destaque-saibamais-bg.png" />
+    <Content Include="Content\img\bt-enviar.png" />
+    <Content Include="Content\img\bt-pesquisar.png" />
+    <Content Include="Content\img\bt-saibamais-bg.png" />
+    <Content Include="Content\img\bullet-verde.png" />
+    <Content Include="Content\img\caixas-em-construcao.png" />
+    <Content Include="Content\img\conteudo-bg.jpg" />
+    <Content Include="Content\img\dados-adicionais.png" />
+    <Content Include="Content\img\dados-da-carga.png" />
+    <Content Include="Content\img\dados-da-empresa.png" />
+    <Content Include="Content\img\data-ico.png" />
+    <Content Include="Content\img\destaque-titulo-icone-clientes.png" />
+    <Content Include="Content\img\destaque-titulo-icone-data.png" />
+    <Content Include="Content\img\destaque-titulo-icone-setas.png" />
+    <Content Include="Content\img\destaque_238.png" />
+    <Content Include="Content\img\destaque_354.png" />
+    <Content Include="Content\img\empresa\img01.jpg" />
+    <Content Include="Content\img\empresa\img01.png" />
+    <Content Include="Content\img\empresa\img02.png" />
+    <Content Include="Content\img\empresa\img03.png" />
+    <Content Include="Content\img\empresa\img04.png" />
+    <Content Include="Content\img\footer-bg-caixas.png" />
+    <Content Include="Content\img\footer-bg.gif" />
+    <Content Include="Content\img\footer-webtrack-logo.png" />
+    <Content Include="Content\img\form-contato-bt-enviar.png" />
+    <Content Include="Content\img\header-logo.gif" />
+    <Content Include="Content\img\header-logo.png" />
+    <Content Include="Content\img\header-redes-sociais.png" />
+    <Content Include="Content\img\ico-erro.png" />
+    <Content Include="Content\img\ico-falha.png" />
+    <Content Include="Content\img\ico-sucesso.png" />
+    <Content Include="Content\img\infos\box_306_bg.png" />
+    <Content Include="Content\img\infos\bt-calcular.png" />
+    <Content Include="Content\img\infos\bt-limpar.png" />
+    <Content Include="Content\img\infos\icone-relogio.png" />
+    <Content Include="Content\img\infos\sprite-icones-titulos.png" />
+    <Content Include="Content\img\menu-bg-hover.gif" />
+    <Content Include="Content\img\menu-bg.gif" />
+    <Content Include="Content\img\portifolio\flyparts.png" />
+    <Content Include="Content\img\portifolio\jam.png" />
+    <Content Include="Content\img\portifolio\port-bg.png" />
+    <Content Include="Content\img\portifolio\port-omni.png" />
+    <Content Include="Content\img\portifolio\port-senior.png" />
+    <Content Include="Content\img\solucoes\seta.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\comum.js" />
+    <Content Include="Scripts\infos.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\solucoes.js" />
+    <Content Include="Views\Empresa\Index.aspx" />
+    <Content Include="Views\Portfolio\Index.aspx" />
+    <Content Include="Views\Shared\ContatoUserControl.ascx" />
+    <Content Include="Views\Solucoes\Index.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\css\rockwell-webfont.eot" />
+    <None Include="Content\css\rockwell-webfont.ttf" />
+    <None Include="Content\css\rockwell-webfont.woff" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4800</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
